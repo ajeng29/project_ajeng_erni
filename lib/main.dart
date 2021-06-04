@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:project_ajeng_erni/layout/Dash.dart';
 import 'package:project_ajeng_erni/model/film.dart';
-void main() async =>runApp(MyApp(f:await loadFlim()));
+void main() async =>runApp(MyApp(f:await loadFilm()));
 class MyApp extends StatelessWidget {
   final Film f;
   MyApp({this.f});

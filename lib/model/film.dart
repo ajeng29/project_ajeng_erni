@@ -9,4 +9,4 @@ class Film{
   }
 }
 Future<String> loadAsset() async{return await rootBundle.loadString('assets/data/flim.json');}
-Future<Film> loadFlim() async{return new Film.fromJson(json.decode(await loadAsset()));}
+Future<Film> loadFilm() async{return new Film.fromJson(json.decode(await loadAsset()));}
