@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:ticket_view/layout/Dash.dart';
-import 'package:ticket_view/model/film.dart';
+import 'package:project_ajeng_erni/layout/Dash.dart';
+import 'package:project_ajeng_erni/model/film.dart';
 void main() async =>runApp(MyApp(f:await loadFlim()));
 class MyApp extends StatelessWidget {
-  final Flim f;
+  final Film f;
   MyApp({this.f});
 
   @override
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   }
 }
 class MyCard extends StatelessWidget{
-  final Flim f;
+  final Film f;
   MyCard({this.f});
   var edgeInsets=EdgeInsets.only(left:9.0,right:9.0,top:6,bottom:6);
   var border=BeveledRectangleBorder(borderRadius:BorderRadius.circular(14.0));
